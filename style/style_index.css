@@ -1,0 +1,78 @@
+        body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Overpass', sans-serif; letter-spacing: 0px; font-size: 17px; color: #8d8f90; font-weight: 400; line-height: 32px; background-color: #edefef; }
+        h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+        h1 { font-size: 34px; }
+        h2 { font-size: 28px; line-height: 38px; }
+        h3 { font-size: 22px; line-height: 32px; }
+        h4 { font-size: 20px; }
+        h5 { font-size: 17px; }
+        h6 { font-size: 12px; }
+        p { margin: 0 0 20px; line-height: 1.7; }
+        p:last-child { margin: 0px; }
+        ul, ol, li { font-size: 22px; color:#003396;}
+        a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+        a:focus, a:hover { text-decoration: none; color: #f85759; }
+
+
+        .page-header { background-color:#003396;
+            /*background: url(https://img.freepik.com/vector-gratis/fondo-semitono-azul-blanco_53876-114466.jpg)no-repeat; position: relative; background-size: cover;*/ }
+        .page-caption { padding-top: 100px; padding-bottom: 150px; }
+        .page-title { font-size: 50px; line-height: 1; color: #fff; font-weight: 600; text-align: center; text:bold; }
+
+        .card-section { position: relative; bottom: 60px; }
+        .card-block { padding: 80px; }
+        .section-title { margin-bottom: 60px; }
+
+        
+
+
+
+        body{
+            margin-top:20px;
+            background:#eee;
+        }
+        .gradient-brand-color {
+            background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+            background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+            color: #fff;
+        }
+        label{
+            color:black;
+        }
+        .contact-info__wrapper {
+            overflow: hidden;
+            border-radius: .625rem .625rem 0 0
+        }
+        
+        @media (min-width: 1024px) {
+            .contact-info__wrapper {
+                border-radius: 0 .625rem .625rem 0;
+                padding: 5rem !important
+            }
+        }
+        .contact-info__list span.position-absolute {
+            left: 0
+        }
+        .z-index-101 {
+            z-index: 101;
+        }
+        .list-style--none {
+            list-style: none;
+        }
+        .contact__wrapper {
+            background-color: #fff;
+            border-radius: 0 0 .625rem .625rem
+        }
+        
+        @media (min-width: 1024px) {
+            .contact__wrapper {
+                border-radius: .625rem 0 .625rem .625rem
+            }
+        }
+        @media (min-width: 1024px) {
+            .contact-form__wrapper {
+                padding: 5rem !important
+            }
+        }
+        .shadow-lg, .shadow-lg--on-hover:hover {
+            box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+        }
