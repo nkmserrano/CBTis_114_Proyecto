@@ -16,7 +16,7 @@
 <div class="container" style="background-color: white; box-shadow: 2px 2px 5px darkgray; margin-top: 3rem; margin-bottom: 3rem;">
         <h1 style="padding:15px;">Ficha de nuevo ingreso.</h1>
             <div class="col-lg-12 contact-form__wrapper p-5 order-lg-1">
-                <form action="guardarFicha.php" class="contact-form form-validate" novalidate="novalidate">
+                <form action="guardarFicha.php" class="contact-form form-validate" method="POST" novalidate="novalidate">
                     <div class="row">
                         <h2 style="color: darkblue;">Datos personales del alumno:</h2>
                         <div class="col-sm-4 mb-6">
@@ -59,8 +59,8 @@
                                 <label style="color:lightblack;" for="sexo">Sexo:</label>
                                 <select class="form-control" name="sexo" id="sexo">
                                     <option value="">sexo</option>
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Femenino">Femenino</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
                                 </select>
                             </div>
                         </div>
@@ -391,12 +391,12 @@
                                 <label style="color:lightblack;" class="required-field" for="op1">Opción 1</label>
                                 <select class="form-control" name="op1" id="op1">
                                     <option value="">Especialidad...</option>
-                                    <option value="Administración de Recursos Humanos">Administración de Recursos Humanos</option>
-                                    <option value="Electricidad">Electricidad</option>
-                                    <option value="Contabilidad">Contabilidad</option>
-                                    <option value="Mecanica">Mecanica</option>
-                                    <option value="Programación">Programación</option>
-                                    <option value="Mantenimiento">Mantenimiento</option>
+                                    <option value="1">Administración de Recursos Humanos</option>
+                                    <option value="2">Electricidad</option>
+                                    <option value="3">Contabilidad</option>
+                                    <option value="4">Mecanica</option>
+                                    <option value="5">Programación</option>
+                                    <option value="6">Mantenimiento</option>
                                 </select>
                             </div>
                         </div>
@@ -406,11 +406,12 @@
                                 <label style="color:lightblack;" class="required-field" for="op2">Opción 2</label>
                                 <select class="form-control" name="op2" id="op2">
                                     <option value="">Especialidad...</option>
-                                    <option value="Administración de Recursos Humanos">Administración de Recursos Humanos</option>
-                                    <option value="Electricidad">Electricidad</option>
-                                    <option value="Contabilidad">Contabilidad</option>
-                                    <option value="Mecanica">Mecanica</option>
-                                    <option value="Programación">Programación</option>
+                                    <option value="1">Administración de Recursos Humanos</option>
+                                    <option value="2">Electricidad</option>
+                                    <option value="3">Contabilidad</option>
+                                    <option value="4">Mecanica</option>
+                                    <option value="5">Programación</option>
+                                    <option value="6">Mantenimiento</option>
                                 </select>
                             </div>
                         </div>
@@ -420,11 +421,12 @@
                                 <label style="color:lightblack;" class="required-field" for="op3">Opción 3</label>
                                 <select class="form-control" name="op3" id="op3">
                                     <option value="">Especialidad...</option>
-                                    <option value="Administración de Recursos Humanos">Administración de Recursos Humanos</option>
-                                    <option value="Electricidad">Electricidad</option>
-                                    <option value="Contabilidad">Contabilidad</option>
-                                    <option value="Mecanica">Mecanica</option>
-                                    <option value="Programación">Programación</option>
+                                    <option value="1">Administración de Recursos Humanos</option>
+                                    <option value="2">Electricidad</option>
+                                    <option value="3">Contabilidad</option>
+                                    <option value="4">Mecanica</option>
+                                    <option value="5">Programación</option>
+                                    <option value="6">Mantenimiento</option>
                                 </select>
                             </div>
                         </div>

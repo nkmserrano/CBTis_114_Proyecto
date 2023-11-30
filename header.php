@@ -42,8 +42,8 @@
 						<a class="nav-link" href="index.php" style="color: #1976D2; font-size: 20px; font-weight: bold;">Inicio</a>
 						<a class="nav-link" href="formulario.php" style="color: #1976D2; font-size: 20px; font-weight: bold;">Nuevo Ingreso</a>
 						<a class="nav-link" href="buscar.php" style="color: #1976D2; font-size: 20px; font-weight: bold;">Consultas de Fichas</a>
-						<a class="nav-link" href="plan_estudios.html" style="color: #1976D2; font-size: 20px; font-weight: bold;">Plan de Estudios</a>
-						<a class="nav-link" href="acuerdo_convivencia.html" style="color: #1976D2; font-size: 20px; font-weight: bold;">Normas de Convivencia</a>
+						<a class="nav-link" href="plan_estudios.php" style="color: #1976D2; font-size: 20px; font-weight: bold;">Plan de Estudios</a>
+						<a class="nav-link" href="acuerdo_convivencia.php" style="color: #1976D2; font-size: 20px; font-weight: bold;">Normas de Convivencia</a>
 					</div>
 				  </div>
 				</div>

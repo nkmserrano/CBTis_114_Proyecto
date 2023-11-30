@@ -1,71 +1,156 @@
 <?php
 include_once "config.php";
-
+date_default_timezone_set("America/Mazatlan");
 $ahora = date("Y-m-d H:i:s");
 
 
 
-$nombre = $_GET['nombre'];
-$ApellidoP = $_GET['ApellidoP'];
-$ApellidoM = $_GET['ApellidoM'];
-$fechaNac = $_GET['fechaNac'];
-$curp = $_GET['curp'];
-$sexo = $_GET['sexo'];
-$telefono = $_GET['Telefono'];
-$Correo = $_GET['Correo'];
-$nacionalidad = $_GET['nacionalidad'];
-$estado = $_GET['estado'];
-$municipio = $_GET['municipio'];
-$direccion = $_GET['direccion'];
-$CP = $_GET['CP'];
+$nombre = $_POST['nombre'];
+$ApellidoP = $_POST['ApellidoP'];
+$ApellidoM = $_POST['ApellidoM'];
+$fechaNac = $_POST['fechaNac'];
+$curp = $_POST['curp'];
+$sexo = $_POST['sexo'];
+$telefono = $_POST['Telefono'];
+$Correo = $_POST['Correo'];
+$nacionalidad = $_POST['nacionalidad'];
+$estado = $_POST['estado'];
+$municipio = $_POST['municipio'];
+$direccion = $_POST['direccion'];
+$CP = $_POST['CP'];
 
 
-$estatura = $_GET['estatura'];
-$peso = $_GET['peso'];
-$tipoSangre = $_GET['tipoSangre'];
-$alergias = $_GET['alergias'];
-$Enfermedades = $_GET['Enfermedades'];
-$medicamento = $_GET['medicamento'];
-$tutor1 = $_GET['tutor1'];
-$tutor2 = $_GET['tutor2'];
-$telT1 = $_GET['telefonoT1'];
-$telT2 = $_GET['telefonoT2'];
+$estatura = $_POST['estatura'];
+$peso = $_POST['peso'];
+$tipoSangre = $_POST['tipoSangre'];
+$alergias = $_POST['alergias'];
+$Enfermedades = $_POST['Enfermedades'];
+$medicamento = $_POST['medicamento'];
+$tutor1 = $_POST['tutor1'];
+$tutor2 = $_POST['tutor2'];
+$telT1 = $_POST['telefonoT1'];
+$telT2 = $_POST['telefonoT2'];
 
-$matricula = $_GET['matricula'];
-$cct = $_GET['cct'];
-$nombreEsc = $_GET['nombreEsc'];
-$anioCon = $_GET['anioCon'];
-$promedio = $_GET['promedio'];
-$estado_sec = $_GET['estado_sec'];
-$tel_sec = $_GET['telefono_sec'];
-$tipoSec = $_GET['tipoSec'];
+$matricula = $_POST['matricula'];
+$cct = $_POST['cct'];
+$nombreEsc = $_POST['nombreEsc'];
+$anioCon = $_POST['anioCon'];
+$promedio = $_POST['promedio'];
+$estado_sec = $_POST['estado_sec'];
+$tel_sec = $_POST['telefono_sec'];
+$tipoSec = $_POST['tipoSec'];
 
-$NombreT1 = $_GET['NombreT1'];
-$APPT1 = $_GET['APPT1'];
-$APMT1 = $_GET['APMT1'];
-$FNT1 = $_GET['FNT1'];
-$telT1 = $_GET['telT1'];
-$correoT1 = $_GET['correoT1'];
-$NacT1 = $_GET['NacT1'];
-$DomiT1 = $_GET['DomiT1'];
-$OcupacionT1 = $_GET['OcupacionT1'];
+$NombreT1 = $_POST['NombreT1'];
+$APPT1 = $_POST['APPT1'];
+$APMT1 = $_POST['APMT1'];
+$FNT1 = $_POST['FNT1'];
+$telT1 = $_POST['telT1'];
+$correoT1 = $_POST['correoT1'];
+$NacT1 = $_POST['NacT1'];
+$DomiT1 = $_POST['DomiT1'];
+$OcupacionT1 = $_POST['OcupacionT1'];
 
-$NombreT2 = $_GET['NombreT2'];
-$APPT2 = $_GET['APPT2'];
-$APMT2 = $_GET['APMT2'];
-$FNT2 = $_GET['FNT2'];
-$telT2 = $_GET['telT2'];
-$correoT2 = $_GET['correoT2'];
-$NacT2 = $_GET['NacT2'];
-$DomiT2 = $_GET['DomiT2'];
-$OcupacionT2 = $_GET['OcupacionT2'];
+$NombreT2 = $_POST['NombreT2'];
+$APPT2 = $_POST['APPT2'];
+$APMT2 = $_POST['APMT2'];
+$FNT2 = $_POST['FNT2'];
+$telT2 = $_POST['telT2'];
+$correoT2 = $_POST['correoT2'];
+$NacT2 = $_POST['NacT2'];
+$DomiT2 = $_POST['DomiT2'];
+$OcupacionT2 = $_POST['OcupacionT2'];
 
-$op1 = $_GET['op1'];
-$op2 = $_GET['op2'];
-$op3 = $_GET['op3'];
-$opP1 = $_GET['opP1'];
-$opP2 = $_GET['opP2'];
-$opP3 = $_GET['opP3'];
+$op1 = $_POST['op1'];
+switch ($op1) {
+    case '1':
+        $op1 = "Administración de Recursos Humanos";
+        break;
+    case '2':
+        $op1 = "Electricidad";
+        break;
+    case '3':
+        $op1 = "Contabilidad";
+        break;
+    case '4':
+        $op1 = "Mecanica";
+        break;
+    case '5':
+        $op1 = "Programación";
+        break;
+    case '6':
+        $op1 = "Mantenimiento";
+        break;
+
+    default:
+        $op1 = "No se selecciono.";
+        break;
+}
+$op2 = $_POST['op2'];
+switch ($op2) {
+    case '1':
+        $op2 = "Administración de Recursos Humanos";
+        break;
+    case '2':
+        $op2 = "Electricidad";
+        break;
+    case '3':
+        $op2 = "Contabilidad";
+        break;
+    case '4':
+        $op2 = "Mecanica";
+        break;
+    case '5':
+        $op2 = "Programación";
+        break;
+    case '6':
+        $op2 = "Mantenimiento";
+        break;
+
+    default:
+        $op2 = "No se selecciono.";
+        break;
+}
+$op3 = $_POST['op3'];
+switch ($op3) {
+    case '1':
+        $op3 = "Administración de Recursos Humanos";
+        break;
+    case '2':
+        $op3 = "Electricidad";
+        break;
+    case '3':
+        $op3 = "Contabilidad";
+        break;
+    case '4':
+        $op3 = "Mecanica";
+        break;
+    case '5':
+        $op3 = "Programación";
+        break;
+    case '6':
+        $op3 = "Mantenimiento";
+        break;
+
+    default:
+        $op3 = "No se selecciono.";
+        break;
+}
+$opP1 = $_POST['opP1'];
+$opP2 = $_POST['opP2'];
+$opP3 = $_POST['opP3'];
+
+switch ($sexo) {
+    case '1':
+        $sexo = "Masculino";
+        break;
+    case '2':
+        $sexo = "Femenino";
+        break;
+    
+    default:
+        $sexo = "No seleccionado";
+        break;
+}
 
 
 

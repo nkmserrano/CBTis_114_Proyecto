@@ -45,9 +45,39 @@ $result = $conexion->query($sql);
 while ($row = $result->fetch_assoc()){
     $id_ficha = $row['id'];
             echo "<div class='ficha'>";
-            echo "<div><h6>No.Folio " . $row['folio'] . "</h6></div>";
-            echo "</div>";
+            echo "<div><h3>No.Folio:  " . $row['folio'] . "</h3></div>";
+            echo "<div><h5>Fecha:  " . $row['fecha'] . "</h5></div>";
+            echo "<br><br>";
+            echo "<div><h4>CURP:  " . $row['curp'] . "</h4></div>";
+            
+            $sql2 = "SELECT * FROM datos_personales_alumno WHERE id_ficha='$id'";
+            $result2 = $conexion->query($sql2);
+            while ($r = $result2->fetch_assoc()){
+                echo "<div><h5>Nombre completo del aspirante:  " . $r['Nombre'] . " " . $r['ApellidoP'] . "" . $r['ApellidoM']."</h5></div>";
+                echo "<div><h5>Nacionalidad:  " . $r['nacionalidad'] . "</h5></div>";
+                echo "<div><h5>Correo:  " . $r['correo'] . "</h5></div>";
+            }
+            $sql3 = "SELECT * FROM datos_preparatoria WHERE id_ficha='$id'";
+            $result3 = $conexion->query($sql3);
+            while ($p = $result3->fetch_assoc()){
+                echo "<br>";
+                echo "<center>";
+                echo "<h2>CBTis No. 114.</h2>";
+                echo "<img width='150px'; height= '180px'; src='imagenes/logo.jpg'/>";
+                
+                echo "<h4>Especialidades.</h4>";
+                echo "<div><h6>Primera opción:  " . $p['Esp_1'] . "</h6></div>";
+                echo "<div><h6>Segunda opción:  " . $p['Esp_2'] . "</h6></div>";
+                echo "<div><h6>Tercera opción:  " . $p['Esp_3'] . "</h6></div>";
+                
+                echo "<h4>Otros planteles:.</h4>";
+                echo "<div><h6>Primera opción:  " . $p['Plantel_1'] . "</h6></div>";
+                echo "<div><h6>Segunda opción:  " . $p['Plantel_2'] . "</h6></div>";
+                echo "<div><h6>Tercera opción:  " . $p['Plantel_3'] . "</h6></div>";
+                echo "</center>";
+            }
         }
+        echo "</div>";
 
     ?>
 
